@@ -1,4 +1,4 @@
-const apiKey = '67120de74ecc418bb27e1cb8abb9437c'; 
+const apiKey = ''; 
 const searchBtn = document.getElementById('searchBtn');
 const ingredientInput = document.getElementById('ingredientInput');
 const recipeResults = document.getElementById('recipeResults');
@@ -135,3 +135,4 @@ function getCookie(name) {
     }
     return null;
 }
+
