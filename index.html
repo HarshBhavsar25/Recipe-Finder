@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder - Discover Recipes by Ingredients</title>
+    <link rel="icon" href="images/chef.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Recipe Finder</h1>
+        <p>Enter ingredients you have and find delicious recipes!</p>
+    </header>
+
+    <!-- Introduction Section -->
+    <section class="intro-section">
+        <div class="intro-content">
+            <h2>Welcome to Recipe Finder</h2>
+            <p>Struggling to come up with recipes based on what’s in your fridge? Recipe Finder is here to make your life easier! Enter the ingredients you have on hand, and we'll provide you with a range of delicious recipes from appetizers to desserts. Whether you're a home cook or a professional chef, our vast library of recipes ensures that you'll always find something tasty to prepare. With step-by-step instructions and beautiful visuals, cooking will become a breeze!</p>
+            <p>Try it now and unleash your inner chef!</p>
+        </div>
+        <div class="intro-images">
+            <img src="images/cooking.jpg" alt="Cooking ingredients" class="intro-image">
+            <img src="images/recipe-dish.jpg" alt="Delicious dish" class="intro-image">
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps">
+            <div class="step">
+                <img src="images/step1.png" alt="Step 1: Enter Ingredients">
+                <p><strong>Step 1:</strong> Enter the ingredients you have in the search box.</p>
+            </div>
+            <div class="step">
+                <img src="images/step2.png" alt="Step 2: Browse Recipes">
+                <p><strong>Step 2:</strong> Browse through a curated list of recipes based on your ingredients.</p>
+            </div>
+            <div class="step">
+                <img src="images/step3.png" alt="Step 3: Enjoy Your Meal">
+                <p><strong>Step 3:</strong> Follow simple instructions, cook the meal, and enjoy!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <h2>Find Recipes by Ingredients</h2>
+        <input type="text" id="ingredientInput" placeholder="Enter ingredients (e.g., chicken, tomato)" />
+        <button id="searchBtn">Search Recipes</button>
+    </section>
+
+    <!-- Featured Recipes Section -->
+    <section class="featured-recipes">
+        <h2>Featured Recipes</h2>
+        <div class="recipe-grid">
+            <div class="recipe-card">
+                <img src="images/recipe1.jpg" alt="Recipe 1" class="recipe-image">
+                <div class="recipe-card-content">
+                    <h3>Grilled Chicken Salad</h3>
+                    <p>A healthy and delicious salad with grilled chicken and fresh vegetables.</p>
+                </div>
+            </div>
+            <div class="recipe-card">
+                <img src="images/recipe2.jpg" alt="Recipe 2" class="recipe-image">
+                <div class="recipe-card-content">
+                    <h3>Spaghetti Carbonara</h3>
+                    <p>A classic Italian pasta dish with eggs, cheese, pancetta, and pepper.</p>
+                </div>
+            </div>
+            <div class="recipe-card">
+                <img src="images/recipe3.jpg" alt="Recipe 3" class="recipe-image">
+                <div class="recipe-card-content">
+                    <h3>Chocolate Lava Cake</h3>
+                    <p>A rich and indulgent dessert with a gooey chocolate center.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What Our Users Are Saying</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial">
+                <p>"Recipe Finder has transformed the way I cook! I never waste ingredients anymore, and every dish turns out delicious!"</p>
+                <h4>-Mr Harsh.</h4>
+            </div>
+            <div class="testimonial">
+                <p>"This app is a lifesaver! As a busy professional, I can quickly whip up meals with whatever I have in the fridge. Highly recommend it!"</p>
+                <h4>-Mr Raju.</h4>
+            </div>
+            <div class="testimonial">
+                <p>"I love how easy it is to find new recipes. The instructions are clear, and the results are always fantastic!"</p>
+                <h4>- Mr Ram.</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipe Results Grid -->
+    <section id="recipeResults" class="recipe-grid"></section>
+
+    <!-- Recipe Modal -->
+    <div id="recipeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalRecipeTitle"></h2>
+            <img id="modalRecipeImage" src="" alt="">
+            <div id="modalRecipeInstructions"></div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Recipe Finder - Discover Recipes by Ingredients.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

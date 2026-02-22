@@ -1,0 +1,366 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000; /* Black background */
+    color: #f4f4f4; /* Light color for text */
+    line-height: 1.6;
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    background-color: #1c1c1c;
+    color: white;
+    padding: 2rem 0;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Search Section */
+.search-section {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+#ingredientInput {
+    width: 60%;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 1px solid #555;
+    border-radius: 5px;
+    outline: none;
+    background-color: #333;
+    color: #fff;
+}
+
+#searchBtn {
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#searchBtn:hover {
+    background-color: #ff4b4b;
+}
+
+/* Recipe Grid */
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.recipe-card {
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.recipe-card:hover {
+    transform: scale(1.05);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.recipe-card-content {
+    padding: 15px;
+}
+
+.recipe-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.recipe-card a {
+    text-decoration: none;
+    color: #ff6b6b;
+    font-weight: bold;
+}
+
+.recipe-card a:hover {
+    color: #ff4b4b;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #1c1c1c;
+    color: white;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    background-color: #1c1c1c;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    color: white;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Button Styles */
+button {
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#searchBtn:hover {
+    background-color: #ff4b4b;
+    transform: translateY(-2px);
+}
+
+#searchBtn:active {
+    background-color: #ff3b3b;
+    transform: translateY(1px);
+}
+
+.view-recipe {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.view-recipe:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+.view-recipe:active {
+    background-color: #388e3c;
+    transform: translateY(1px);
+}
+
+/* Introduction Section */
+.intro-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+    background-color: #1c1c1c;
+    color: #fff;
+}
+
+.intro-content {
+    flex: 1;
+    padding-right: 2rem;
+}
+
+.intro-images {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.intro-image {
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* How It Works Section */
+.how-it-works {
+    text-align: center;
+    padding: 3rem;
+    background-color: #2b2b2b;
+    color: #fff;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.step {
+    flex: 1;
+    padding: 1rem;
+    text-align: center;
+}
+
+.step img {
+    width: 350px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.step p {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+/* Featured Recipes Section */
+.featured-recipes {
+    padding: 3rem;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #333;
+    color: #fff;
+    padding: 3rem;
+    text-align: center;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-top: 30px;
+}
+
+.testimonial {
+    background-color: #444;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    #ingredientInput {
+        width: 80%;
+        font-size: 1rem;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    .recipe-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .steps {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .step img {
+        width: 250px;
+    }
+
+    .intro-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro-content {
+        padding-right: 0;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .intro-image {
+        width: 100%;
+    }
+
+    #ingredientInput {
+        width: 90%;
+    }
+
+    .step img {
+        width: 200px;
+    }
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .intro-section {
+        flex-direction: column; /* Stack elements vertically */
+        padding: 2rem; /* Adjust padding for smaller screens */
+    }
+
+    .intro-content {
+        padding-right: 0; /* Remove right padding */
+        text-align: center; /* Center text */
+    }
+
+    .intro-images {
+        flex-wrap: wrap; /* Allow images to wrap */
+        justify-content: center; /* Center images */
+    }
+
+    .intro-image {
+        width: 100%; /* Full width on small screens */
+        max-width: 300px; /* Limit max width for images */
+        margin: 0 auto; /* Center images */
+    }
+}
+
